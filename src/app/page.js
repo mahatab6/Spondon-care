@@ -6,7 +6,7 @@ export default function Home() {
     <div>
       <h1 className="text-2xl font-extrabold">Spondon care</h1>
       <p className=" text-2xl font-bold">hello</p>
-      <Button className={"font-bold"}>Click me</Button>
+      <Button variant={"outline"} className={"font-bold"}>Click me</Button>
     </div>
   );
 }

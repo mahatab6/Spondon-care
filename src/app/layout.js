@@ -1,5 +1,6 @@
 import { Saira  } from "next/font/google";
 import "./globals.css";
+import Navbar from "@/components/navbar";
 
 
 const saira = Saira ({
@@ -19,6 +20,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${saira.className}  antialiased`}
       >
+        <Navbar/>
         {children}
       </body>
     </html>
