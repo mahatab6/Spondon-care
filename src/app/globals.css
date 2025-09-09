@@ -122,18 +122,18 @@
   }
 
   .primary-color {
-    @apply #0E6BA8;
+    color: #0E6BA8; /* Direct color */
   }
 
   .secondary-color {
-    @apply #0E6BA8;
+    color: #0E6BA8;
   }
 
   .accent-color {
-    @apply #0E6BA8;
+    color: #0E6BA8;
   }
 
   .text-color {
-    @apply #0E6BA8;
+    color: #0E6BA8;
   }
 }
