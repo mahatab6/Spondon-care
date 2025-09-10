@@ -148,3 +148,11 @@
   }
 
 }
+
+.font-playfair {
+  font-family: var(--font-playfair);
+}
+
+.font-saira {
+  font-family: var(--font-saira);
+}
