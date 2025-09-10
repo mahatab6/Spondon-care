@@ -1,3 +1,4 @@
+"use client"
 import React from 'react'
 
 
@@ -106,9 +107,20 @@ export default function Topdoctors() {
       "image": "https://randomuser.me/api/portraits/women/72.jpg"
     }
   ]
+  const handleClick=(id)=>{
+    console.log(id);
+    for(const i of doctors){
+        if(id==i.id){
+         alert(`appointment booked for ${i.name}`)
+    }
 
+    }
+    
+       
+  }
 
   return (
+   
    <div className="p-6">
   <h1 className="text-2xl font-bold mb-6 text-center">Top Doctors</h1>
   <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -116,7 +128,7 @@ export default function Topdoctors() {
       <div
         key={doc.id}
         className="p-6 border rounded-2xl shadow-md bg-white dark:bg-gray-800 
-                   transform transition duration-300 hover:-translate-y-2 hover:shadow-xl"
+                   transform transition duration-300 hover:-translate-y-2 hover:shadow-xl flex flex-col"
       >
         {/* Image */}
         <div className="flex justify-center mb-4">
@@ -134,7 +146,7 @@ export default function Topdoctors() {
           {doc.specialization}
         </p>
 
-        <div className="mt-4 space-y-1 text-sm">
+        <div className="mt-4 space-y-1 text-sm flex-1">
           <p>
             <span className="font-semibold">Email:</span> {doc.email}
           </p>
@@ -150,11 +162,18 @@ export default function Topdoctors() {
             {doc.availability}
           </p>
         </div>
+
+        {/* Appointment Button */}
+        <button
+          onClick={()=>handleClick(doc.id)}
+          className="mt-4 w-full btn-primary hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-lg transition"
+        >
+          Book Appointment
+        </button>
       </div>
     ))}
   </div>
 </div>
-
 
   )
 }
