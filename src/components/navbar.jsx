@@ -40,7 +40,8 @@ export default function Navbar() {
 
       {/* Desktop Button */}
       <div className="hidden md:block ">
-        <Button>Sign In</Button>
+        <Button className="btn-primary">Sign In</Button>
+        <Button className="btn-secondary">Sign Up</Button>
       </div>
 
       {/* Mobile Menu */}
