@@ -116,7 +116,24 @@
   * {
     @apply border-border outline-ring/50;
   }
+
   body {
     @apply bg-background text-foreground;
+  }
+
+  .primary-color {
+    color: #0E6BA8; /* Direct color */
+  }
+
+  .secondary-color {
+    color: #0E6BA8;
+  }
+
+  .accent-color {
+    color: #0E6BA8;
+  }
+
+  .text-color {
+    color: #0E6BA8;
   }
 }
