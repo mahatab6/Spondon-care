@@ -123,6 +123,7 @@
     @apply bg-background text-foreground;
   }
 
+
   .primary-color {
     color: #0E6BA8;
   }
@@ -138,6 +139,7 @@
   .text-color {
     color: #212529;
   }
+
 
   .btn-primary {
     @apply px-6 py-2 cursor-pointer rounded-sm font-medium text-white shadow-lg bg-gradient-to-r from-[#0E6BA8] to-[#00A8E8] hover:from-[#0077B6] hover:to-[#0096C7] transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#00A8E8]
