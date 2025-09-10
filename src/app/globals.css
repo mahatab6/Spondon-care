@@ -76,6 +76,8 @@
   --sidebar-accent-foreground: oklch(0.205 0 0);
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
+  --font-saira: 'Saira', sans-serif;
+  --font-playfair: 'Playfair Display', serif;
 }
 
 .dark {
@@ -147,9 +149,12 @@
     @apply px-6 py-2 cursor-pointer rounded-sm font-medium text-white shadow-lg bg-gradient-to-r from-[#00A8E8] to-[#00A8E8] transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#00A8E8]
   }
 
+}
 
+.font-playfair {
+  font-family: var(--font-playfair);
+}
 
-
-
-
+.font-saira {
+  font-family: var(--font-saira);
 }
