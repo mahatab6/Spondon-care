@@ -6,7 +6,11 @@ import Services from "@/components/Home/services";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Topdoctors from "../components/Home/Topdoctors";
+
 import Promotion from "@/components/Home/Promotion";
+
+import UrgentHelp from "@/components/Home/UrgentHelp";
+
 
 export default function Home() {
   return (
@@ -15,10 +19,10 @@ export default function Home() {
       <Banner></Banner>
 
       <Services/>
-
+      <UrgentHelp/>
       <h1 className="text-2xl font-extrabold">Spondon care</h1>
       <p className=" text-2xl font-bold">hello</p>
-      <Button variant={"outline"} className={"font-bold"}>Click me</Button>
+      <Button variant={"default"} className={"font-bold"}>Click me</Button>
       <section>
         <Topdoctors></Topdoctors>
         
@@ -26,6 +30,7 @@ export default function Home() {
       <section>
         <Promotion></Promotion>
       </section>
+
     </div>
   );
 }
