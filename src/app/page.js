@@ -20,28 +20,22 @@ export default function Home() {
       <Banner></Banner>
 
 
-    
+      <Services />
 
-      <Services/>
-      <UrgentHelp/>
+
+      <Services />
+      <UrgentHelp />
 
       <h1 className="text-2xl font-extrabold">Spondon care</h1>
       <p className=" text-2xl font-bold">hello</p>
       <Button variant={"default"} className={"font-bold"}>Click me</Button>
       <section>
         <Topdoctors></Topdoctors>
-
-
-     
-      <DoctorReviews />
-
-        
-      
-      
+        <DoctorReviews />
         <Promotion></Promotion>
       </section>
 
 
-    </div>
+    </div >
   );
 }
