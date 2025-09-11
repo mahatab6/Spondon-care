@@ -16,7 +16,7 @@ import {
 
 const Footer = () => {
     return (
-        <footer className="bg-[#7ed3f5]/30 pt-16 pb-8">
+        <footer className="bg-[#00A8E8]/20 pt-16 pb-8">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 {/* Main Footer Content */}
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
@@ -25,7 +25,7 @@ const Footer = () => {
                     <div className="lg:col-span-1">
                         <div className="mb-6">
                             <img
-                                src="https://i.ibb.co.com/3ycwWWR2/Logo-2.png"
+                                src="https://i.ibb.co/3ycwWWR/Logo-2.png"
                                 alt="Medical Logo"
                                 className="h-12 w-auto mb-4"
                             />
