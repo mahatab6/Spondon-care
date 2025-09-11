@@ -6,6 +6,7 @@ import Services from "@/components/Home/services";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Topdoctors from "../components/Home/Topdoctors";
+import Promotion from "@/components/Home/Promotion";
 
 export default function Home() {
   return (
@@ -20,6 +21,10 @@ export default function Home() {
       <Button variant={"outline"} className={"font-bold"}>Click me</Button>
       <section>
         <Topdoctors></Topdoctors>
+        
+      </section>
+      <section>
+        <Promotion></Promotion>
       </section>
     </div>
   );
