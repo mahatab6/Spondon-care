@@ -1,3 +1,4 @@
+
 import React from 'react';
 
 const StarRating = ({ rating }) => {
@@ -99,6 +100,7 @@ const DoctorReviews = () => {
                         </div>
                     ))}
                 </div>
+                
             </div>
         </div>
     );

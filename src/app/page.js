@@ -11,6 +11,7 @@ import DoctorReviews from "@/components/Home/DoctorReviews";
 import Promotion from "@/components/Home/Promotion";
 
 import UrgentHelp from "@/components/Home/UrgentHelp";
+import Specialization from "@/components/Home/Specialization";
 
 
 export default function Home() {
@@ -23,6 +24,8 @@ export default function Home() {
       <Services />
 
 
+
+
       <Services />
       <UrgentHelp />
 
@@ -30,6 +33,7 @@ export default function Home() {
       <p className=" text-2xl font-bold">hello</p>
       <Button variant={"default"} className={"font-bold"}>Click me</Button>
       <section>
+        <Specialization></Specialization>
         <Topdoctors></Topdoctors>
         <DoctorReviews />
         <Promotion></Promotion>
