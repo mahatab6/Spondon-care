@@ -11,24 +11,18 @@ import DoctorReviews from "@/components/Home/DoctorReviews";
 import Promotion from "@/components/Home/Promotion";
 
 import UrgentHelp from "@/components/Home/UrgentHelp";
+import Navbar from "@/components/navbar";
 
 
 export default function Home() {
   return (
     <div>
-
+      
       <Banner></Banner>
-
-
+      <Navbar></Navbar>
       <Services />
-
-
       <Services />
       <UrgentHelp />
-
-      <h1 className="text-2xl font-extrabold">Spondon care</h1>
-      <p className=" text-2xl font-bold">hello</p>
-      <Button variant={"default"} className={"font-bold"}>Click me</Button>
       <section>
         <Topdoctors></Topdoctors>
         <DoctorReviews />
