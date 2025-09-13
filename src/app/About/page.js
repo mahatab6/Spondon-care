@@ -1,7 +1,15 @@
-import React from 'react'
+import { AboutHero } from "@/components/About/AboutHero";
+import { MissionVision } from "@/components/About/MissionVision";
+import { StatsCard } from "@/components/About/StatsCard";
+import { TeamSection } from "@/components/About/TeamSection";
 
-export default function page() {
+export default function AboutPage() {
   return (
-    <div>about page</div>
-  )
+    <main>
+      <AboutHero />
+      <MissionVision />
+      <StatsCard />
+      <TeamSection />
+    </main>
+  );
 }

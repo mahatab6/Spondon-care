@@ -1,4 +1,3 @@
-
 import Banner from "@/components/Home/Banner";
 
 import Services from "@/components/Home/services";
@@ -13,33 +12,16 @@ import Promotion from "@/components/Home/Promotion";
 import UrgentHelp from "@/components/Home/UrgentHelp";
 import Specialization from "@/components/Home/Specialization";
 
-
 export default function Home() {
   return (
     <div>
-
       <Banner></Banner>
-
-
-      <Services />
-
-
-
-
       <Services />
       <UrgentHelp />
-
-      <h1 className="text-2xl font-extrabold">Spondon care</h1>
-      <p className=" text-2xl font-bold">hello</p>
-      <Button variant={"default"} className={"font-bold"}>Click me</Button>
-      <section>
-        <Specialization></Specialization>
-        <Topdoctors></Topdoctors>
-        <DoctorReviews />
-        <Promotion></Promotion>
-      </section>
-
-
-    </div >
+      <Specialization />
+      <Topdoctors />
+      <DoctorReviews />
+      <Promotion />
+    </div>
   );
 }
