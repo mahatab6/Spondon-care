@@ -12,14 +12,15 @@ import Promotion from "@/components/Home/Promotion";
 
 import UrgentHelp from "@/components/Home/UrgentHelp";
 import Navbar from "@/components/navbar";
+import Navbar2 from "@/components/Navbar2";
 
 
 export default function Home() {
   return (
     <div>
-      
+      <Navbar2></Navbar2>
       <Banner></Banner>
-      <Navbar></Navbar>
+      
       <Services />
       <Services />
       <UrgentHelp />
