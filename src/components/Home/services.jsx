@@ -2,7 +2,6 @@ import Image from "next/image";
 import React from "react";
 import { SlArrowRight } from "react-icons/sl";
 
-
 export default function Services() {
   const servicesData = [
     {
@@ -48,7 +47,7 @@ export default function Services() {
   ];
 
   return (
-    <div>
+    <div className="my-16">
       <div className="text-center space-y-3">
         <h2 className="text-4xl font-bold">Our Key Services</h2>
         <p className="text-xl ">
@@ -73,7 +72,9 @@ export default function Services() {
             />
             <h1 className="text-xl font-semibold mb-2">{item.h1}</h1>
             <p className="text-gray-600">{item.p}</p>
-            <p className="flex items-center gap-2 font-bold hover:cursor-pointer text-blue-500">Learn More <SlArrowRight/></p>
+            <p className="flex items-center gap-2 font-bold hover:cursor-pointer text-blue-500">
+              Learn More <SlArrowRight />
+            </p>
           </div>
         ))}
       </div>

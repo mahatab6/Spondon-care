@@ -1,4 +1,3 @@
-
 import Banner from "@/components/Home/Banner";
 
 import Services from "@/components/Home/services";
@@ -11,13 +10,18 @@ import DoctorReviews from "@/components/Home/DoctorReviews";
 import Promotion from "@/components/Home/Promotion";
 
 import UrgentHelp from "@/components/Home/UrgentHelp";
+
 import Navbar from "@/components/navbar";
 import Navbar2 from "@/components/Navbar2";
+
+
+import Specialization from "@/components/Home/Specialization";
 
 
 export default function Home() {
   return (
     <div>
+
       <Navbar2></Navbar2>
       <Banner></Banner>
       
@@ -32,5 +36,8 @@ export default function Home() {
 
 
     </div >
+
+      
+
   );
 }
