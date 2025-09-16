@@ -10,7 +10,7 @@ import {
   DialogTrigger,
 } from "@/components/ui/dialog";
 
-export default function Navbar() {
+export default function Navbar2() {
   const [open, setOpen] = useState(false);
 
   const links = [
@@ -21,9 +21,13 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className="bg-white shadow-md px-6 py-4 flex items-center justify-between">
+    <div className="fixed top-0 z-50 w-full bg-transparent backdrop-blur-3xl">
+      <nav className=" px-1 w-11/12 mx-auto py-4 flex items-center justify-between text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 to-green-400">
       {/* Logo */}
-      <div className="text-xl font-bold">Spondon care</div>
+      <div className="text-xl md:text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 to-green-400 font-playfair flex gap-1 items-center">
+        <img className="w-10 h-10" src="/images/Logo.webp" alt="" />
+        <h1>Spondon Care</h1>
+      </div>
 
       {/* Desktop Links */}
       <div className="hidden md:flex space-x-6">
@@ -31,7 +35,7 @@ export default function Navbar() {
           <Link
             key={link.name}
             href={link.href}
-            className="hover:text-blue-500"
+            className="hover:text-blue-500 font-medium text-lg"
           >
             {link.name}
           </Link>
@@ -41,7 +45,7 @@ export default function Navbar() {
       {/* Desktop Button */}
       <div className="hidden md:block ">
         <Button className="btn-primary">Sign In</Button>
-        <Button className="btn-secondary">Sign Up</Button>
+        <Button className="btn-secondary ml-5">Sign Up</Button>
       </div>
 
       {/* Mobile Menu */}
@@ -71,5 +75,6 @@ export default function Navbar() {
         </Dialog>
       </div>
     </nav>
+    </div>
   );
 }

@@ -31,7 +31,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${saira.variable} ${playfair.variable}  antialiased`}
       >
-        <Navbar />
+        
         {children}
         <Footer />
       </body>
