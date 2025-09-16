@@ -10,7 +10,8 @@ import {
   FaXRay,
 } from "react-icons/fa6";
 import { FaAllergies, FaHeartbeat } from "react-icons/fa";
-import { Irish_Grover } from "next/font/google";
+import { LiaCertificateSolid } from "react-icons/lia";
+import { MdAccessTime, MdSecurity } from "react-icons/md";
 
 const testReports = [
   {
@@ -194,6 +195,37 @@ export default function TestPage() {
           </div>
         </div>
       </div>
+
+      <div className="px-4 lg:px-16 py-12 bg-gradient-to-br from-purple-50 to-indigo-50 rounded-3xl">
+        <h2 className="text-3xl lg:text-4xl font-bold text-center mb-10 text-gray-800">
+          Your Trust & Safety is Our Priority
+        </h2>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+          <div className="flex flex-col items-center bg-white shadow-lg rounded-2xl p-6 hover:shadow-2xl transition">
+            <LiaCertificateSolid className="text-purple-600 text-5xl mb-4" />
+            <p className="text-lg font-medium text-gray-700">
+              Partnered with Reputed Hospitals
+            </p>
+          </div>
+
+          <div className="flex flex-col items-center bg-white shadow-lg rounded-2xl p-6 hover:shadow-2xl transition">
+            <MdSecurity className="text-green-600 text-5xl mb-4" />
+            <p className="text-lg font-medium text-gray-700">
+              Data Privacy & Report Security
+            </p>
+          </div>
+
+          <div className="flex flex-col items-center bg-white shadow-lg rounded-2xl p-6 hover:shadow-2xl transition">
+            <MdAccessTime className="text-blue-600 text-5xl mb-4" />
+            <p className="text-lg font-medium text-gray-700">
+              24/7 Customer Support
+            </p>
+          </div>
+        </div>
+      </div>
+
+      
     </div>
   );
 }
