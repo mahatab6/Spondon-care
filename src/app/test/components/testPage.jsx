@@ -225,7 +225,19 @@ export default function TestPage() {
         </div>
       </div>
 
-      
+      <div className="px-6 lg:px-20 py-12 bg-gradient-to-r from-purple-600 to-indigo-600 rounded-3xl text-center text-white shadow-lg">
+        <p className="text-2xl lg:text-3xl font-bold mb-6">
+          Book Your Test Now – Get Accurate Reports with Ease
+        </p>
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+          <button className="px-6 py-3 bg-white text-purple-700 font-semibold rounded-lg shadow-md hover:bg-gray-100 transition w-full sm:w-auto">
+            Book Now
+          </button>
+          <button className="px-6 py-3 bg-transparent border-2 border-white font-semibold rounded-lg hover:bg-white hover:text-purple-700 transition w-full sm:w-auto">
+            See Packages
+          </button>
+        </div>
+      </div>
     </div>
   );
 }
