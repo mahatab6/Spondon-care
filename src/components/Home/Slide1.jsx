@@ -4,7 +4,7 @@ import Navbar from "../navbar";
 
 const Slide1 = () => {
   return (
-    <div className="w-full min-h-[90vh] relative">
+    <div className="w-full min-h-[95vh] relative">
       <div className="absolute w-full h-full z-20 flex flex-col">
         <div></div>
         <div className="w-11/12 mx-auto text-center flex flex-col items-center justify-center text-gray-50 gap-5 h-full">

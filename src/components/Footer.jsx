@@ -25,7 +25,7 @@ const Footer = () => {
                     <div className="lg:col-span-1">
                         <div className="mb-6">
                             <img
-                                src="https://i.ibb.co/3ycwWWR/Logo-2.png"
+                                src="/images/Logo.webp"
                                 alt="Medical Logo"
                                 className="h-12 w-auto mb-4"
                             />

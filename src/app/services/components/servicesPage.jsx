@@ -166,10 +166,10 @@ const services = [
 ];
 export default function ServicesPage() {
   return (
-    <div className=" py-12 px-4">
+    <div className="pt-20 py-12 px-4">
       {/* Title Section */}
       <div className="text-center mb-12">
-        <h2 className="text-3xl font-bold text-gray-800">
+        <h2 className="text-3xl font-bold text-gray-800 font-playfair">
           Our Hospital Services
         </h2>
         <p className="text-gray-600 mt-2">
@@ -198,7 +198,7 @@ export default function ServicesPage() {
 
             {/* Card Content */}
             <div className="p-6 text-center">
-              <h3 className="text-xl font-semibold text-gray-800 mb-3">
+              <h3 className="text-xl font-semibold text-gray-800 mb-3 font-playfair">
                 {service.title}
               </h3>
               <p className="text-gray-600 mb-4">{service.description}</p>

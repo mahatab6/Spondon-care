@@ -3,6 +3,7 @@ import "./globals.css";
 import Navbar from "@/components/navbar";
 import { Playfair_Display } from "next/font/google";
 import Footer from "@/components/Footer";
+import Navbar2 from "@/components/Navbar2";
 
 
 const saira = Saira({
@@ -31,7 +32,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${saira.variable} ${playfair.variable}  antialiased`}
       >
-        
+        <Navbar2></Navbar2>
         {children}
         <Footer />
       </body>
