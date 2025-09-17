@@ -48,7 +48,6 @@ export default function Services() {
 
   return (
 
-    <div className="max-w-7xl mx-auto">
     <div className="my-16">
 
       <div className="text-center space-y-3">
