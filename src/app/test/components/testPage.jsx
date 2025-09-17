@@ -10,6 +10,8 @@ import {
   FaXRay,
 } from "react-icons/fa6";
 import { FaAllergies, FaHeartbeat } from "react-icons/fa";
+import { LiaCertificateSolid } from "react-icons/lia";
+import { MdAccessTime, MdSecurity } from "react-icons/md";
 
 const testReports = [
   {
@@ -48,6 +50,41 @@ const categories = [
   { id: 6, name: "Allergy Tests", icon: <FaAllergies /> },
   { id: 7, name: "Pre-Employment Screening", icon: <FaUserCheck /> },
   { id: 8, name: "Full Body Check-ups", icon: <FaStethoscope /> },
+];
+
+const Package = [
+  {
+    id: 1,
+    title: "Starter Health Checkup",
+    shortDescription:
+      "Basic health screening package including blood pressure, glucose, and BMI check.",
+    currentPrice: 69.99,
+    offerPrice: 49.99,
+  },
+  {
+    id: 2,
+    title: "Wellness Plus Package",
+    shortDescription:
+      "Comprehensive health package with full body checkup, diet consultation, and fitness tips.",
+    currentPrice: 129.99,
+    offerPrice: 99.99,
+  },
+  {
+    id: 3,
+    title: "Family Care Bundle",
+    shortDescription:
+      "Affordable package covering health checkups for up to 4 family members.",
+    currentPrice: 249.99,
+    offerPrice: 199.99,
+  },
+  {
+    id: 4,
+    title: "Premium Executive Plan",
+    shortDescription:
+      "Exclusive package with advanced diagnostics, specialist consultation, and annual health reports.",
+    currentPrice: 399.99,
+    offerPrice: 299.99,
+  },
 ];
 
 export default function TestPage() {
@@ -106,10 +143,101 @@ export default function TestPage() {
         </div>
       </div>
 
-      <div>
-        
+      <div className="px-4 lg:px-16 py-10">
+        <h2 className="text-3xl lg:text-5xl font-bold gradient-text mb-10 text-center">
+          Special Packages & Offers
+        </h2>
+
+        {/* Package Cards */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+          {Package.map((item) => (
+            <div
+              key={item.id}
+              className="bg-gradient-to-br from-purple-50 to-indigo-100 rounded-2xl p-6 shadow-lg hover:shadow-2xl hover:scale-105 transition transform duration-300 flex flex-col"
+            >
+              <h3 className="text-xl font-bold text-gray-800 mb-2">
+                {item.title}
+              </h3>
+              <p className="text-gray-600 mb-4">{item.shortDescription}</p>
+
+              <div className="flex items-baseline mb-6">
+                <p className="text-3xl font-bold text-purple-600">
+                  ${item.offerPrice}
+                </p>
+                <p className="text-gray-500 line-through ml-3">
+                  ${item.currentPrice}
+                </p>
+              </div>
+
+              <button className="inline-flex items-center justify-center rounded-lg text-sm font-medium transition-colors h-11 px-6 w-full bg-purple-600 hover:bg-purple-700 text-white mt-auto shadow-md hover:shadow-lg">
+                Book Package
+              </button>
+            </div>
+          ))}
+        </div>
+
+        {/* Extra Offers */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 text-center">
+          <div className="bg-yellow-100 text-yellow-800 p-6 rounded-2xl shadow-md hover:shadow-lg transition">
+            <p className="font-bold text-lg">
+              Flat 20% off on First Test Booking
+            </p>
+          </div>
+          <div className="bg-green-100 text-green-800 p-6 rounded-2xl shadow-md hover:shadow-lg transition">
+            <p className="font-bold text-lg">
+              Free Home Sample Collection for Orders Above $50
+            </p>
+          </div>
+          <div className="bg-pink-100 text-pink-800 p-6 rounded-2xl shadow-md hover:shadow-lg transition">
+            <p className="font-bold text-lg">
+              Special Women’s Health Checkup at Discounted Price
+            </p>
+          </div>
+        </div>
       </div>
 
+      <div className="px-4 lg:px-16 py-12 bg-gradient-to-br from-purple-50 to-indigo-50 rounded-3xl">
+        <h2 className="text-3xl lg:text-4xl font-bold text-center mb-10 text-gray-800">
+          Your Trust & Safety is Our Priority
+        </h2>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+          <div className="flex flex-col items-center bg-white shadow-lg rounded-2xl p-6 hover:shadow-2xl transition">
+            <LiaCertificateSolid className="text-purple-600 text-5xl mb-4" />
+            <p className="text-lg font-medium text-gray-700">
+              Partnered with Reputed Hospitals
+            </p>
+          </div>
+
+          <div className="flex flex-col items-center bg-white shadow-lg rounded-2xl p-6 hover:shadow-2xl transition">
+            <MdSecurity className="text-green-600 text-5xl mb-4" />
+            <p className="text-lg font-medium text-gray-700">
+              Data Privacy & Report Security
+            </p>
+          </div>
+
+          <div className="flex flex-col items-center bg-white shadow-lg rounded-2xl p-6 hover:shadow-2xl transition">
+            <MdAccessTime className="text-blue-600 text-5xl mb-4" />
+            <p className="text-lg font-medium text-gray-700">
+              24/7 Customer Support
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div className="px-6 lg:px-20 py-12 bg-gradient-to-r from-purple-600 to-indigo-600 rounded-3xl text-center text-white shadow-lg">
+        <p className="text-2xl lg:text-3xl font-bold mb-6">
+          Book Your Test Now – Get Accurate Reports with Ease
+        </p>
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+          <button className="px-6 py-3 bg-white text-purple-700 font-semibold rounded-lg shadow-md hover:bg-gray-100 transition w-full sm:w-auto">
+            Book Now
+          </button>
+          <button className="px-6 py-3 bg-transparent border-2 border-white font-semibold rounded-lg hover:bg-white hover:text-purple-700 transition w-full sm:w-auto">
+            See Packages
+          </button>
+        </div>
+      </div>
     </div>
   );
 }
