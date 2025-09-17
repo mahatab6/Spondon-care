@@ -17,11 +17,11 @@ export default function UrgentHelp() {
   };
 
   return (
-    <div className="flex flex-col bg-gradient-to-r from-red-600 via-pink-600 to-orange-600 justify-items-center py-20 relative overflow-hidden">
+    <div className="flex flex-col bg-gradient-to-r from-red-600 via-pink-600 to-orange-600 justify-items-center py-20 relative overflow-hidden ">
       {/* Optional animated gradient overlay */}
       <div className="absolute inset-0 bg-gradient-to-br from-red-500 via-pink-500 to-orange-500 opacity-20 animate-gradient-slow pointer-events-none"></div>
 
-      <div className="relative z-10 flex flex-col md:flex-row gap-5 px-6 md:px-20">
+      <div className="relative z-10 flex flex-col md:flex-row gap-5 max-w-7xl mx-auto">
         <div className="flex-1">
           <h2 className="text-4xl lg:text-5xl font-bold mb-6 text-white">
             Need Urgent Medical Help?
@@ -64,7 +64,7 @@ export default function UrgentHelp() {
         </div>
       </div>
 
-      <div className="relative z-10 mt-16 grid grid-cols-2 md:grid-cols-4 gap-8 text-center text-white px-6 md:px-20">
+      <div className="relative z-10 mt-16 grid grid-cols-2 md:grid-cols-4 gap-8 text-center text-white max-w-7xl mx-auto">
         {[
           { value: "5min", label: "Average Response Time", icon: <SlArrowLeft /> },
           { value: "24/7", label: "Emergency Support" },
