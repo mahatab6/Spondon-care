@@ -1,10 +1,11 @@
-import { Saira  } from "next/font/google";
+import { Saira } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/navbar";
 import { Playfair_Display } from "next/font/google";
+import Footer from "@/components/Footer";
 
 
-const saira = Saira ({
+const saira = Saira({
   weight: ["400", "600", "700"],
   subsets: ["latin"],
   display: 'swap',
@@ -30,8 +31,9 @@ export default function RootLayout({ children }) {
       <body
         className={`${saira.variable} ${playfair.variable}  antialiased`}
       >
-        <Navbar/>
+        
         {children}
+        <Footer />
       </body>
     </html>
   );

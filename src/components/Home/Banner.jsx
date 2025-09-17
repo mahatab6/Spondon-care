@@ -14,7 +14,7 @@ const Banner = () => {
   return (
     <div>
       <Swiper
-        className="h-[450px]"
+        className="min-h-[80vh]"
         modules={[Pagination, Autoplay]}
         spaceBetween={1}
         slidesPerView={1}
@@ -25,13 +25,13 @@ const Banner = () => {
         <SwiperSlide>
           <Slide1></Slide1>
         </SwiperSlide>
-        <SwiperSlide className=" bg-amber-500">
+        <SwiperSlide>
           <Slide2></Slide2>
         </SwiperSlide>
-        <SwiperSlide className=" bg-cyan-500">
+        <SwiperSlide>
           <Slide3></Slide3>
         </SwiperSlide>
-        <SwiperSlide className=" bg-violet-500">
+        <SwiperSlide>
           <Slide4></Slide4>
         </SwiperSlide>
       </Swiper>

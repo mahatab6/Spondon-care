@@ -1,13 +1,12 @@
 "use client"
-import Link from 'next/link';
+import Image from 'next/image';
 import React from 'react'
-import { Button } from '../ui/button';
 
+export default function All_doctors() {
 
-
-export default function Topdoctors() {
     
-  const doctors= [
+
+    const doctors= [
     {
       "id": 1,
       "name": "Dr. Arif Rahman",
@@ -109,6 +108,7 @@ export default function Topdoctors() {
       "image": "https://randomuser.me/api/portraits/women/72.jpg"
     }
   ]
+
   const handleClick=(id)=>{
     console.log(id);
     for(const i of doctors){
@@ -120,66 +120,62 @@ export default function Topdoctors() {
     
        
   }
-
   return (
-   
-   <div className="p-6">
-  <h1 className="text-2xl font-bold mb-6 text-center">Top Doctors</h1>
-  <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-    {doctors.slice(0, 6).map((doc) => (
-      <div
-        key={doc.id}
-        className="p-6 border rounded-2xl shadow-md bg-white dark:bg-gray-800 
-                   transform transition duration-300 hover:-translate-y-2 hover:shadow-xl flex flex-col"
-      >
-        {/* Image */}
-        <div className="flex justify-center mb-4">
-          <img
-            src={doc.image}
-            alt={doc.name}
-            className="w-24 h-24 rounded-full border-4 border-blue-500 dark:border-blue-400 object-cover 
-                       transition-transform duration-300 hover:scale-110"
-          />
-        </div>
-
-        {/* Info */}
-        <h2 className="text-xl font-semibold text-center">{doc.name}</h2>
-        <p className="text-center text-gray-600 dark:text-gray-300">
-          {doc.specialization}
-        </p>
-
-        <div className="mt-4 space-y-1 text-sm flex-1">
-          <p>
-            <span className="font-semibold">Email:</span> {doc.email}
-          </p>
-          <p>
-            <span className="font-semibold">Phone:</span> {doc.phone}
-          </p>
-          <p>
-            <span className="font-semibold">Experience:</span>{" "}
-            {doc.experience} years
-          </p>
-          <p>
-            <span className="font-semibold">Available:</span>{" "}
-            {doc.availability}
-          </p>
-        </div>
-
-        {/* Appointment Button */}
-        <button
-          onClick={()=>handleClick(doc.id)}
-          className="mt-4 w-full btn-primary hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-lg transition"
-        >
-          Book Appointment
-        </button>
+    <div className="p-6">
+      <h1 className="text-2xl font-bold mb-6 text-center">All Doctors</h1>
+      <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        {doctors.map((doc) => (
+          <div
+            key={doc.id}
+            className="p-6 border rounded-2xl shadow-md bg-white dark:bg-gray-800 
+                       transform transition duration-300 hover:-translate-y-2 hover:shadow-xl flex flex-col"
+          >
+            {/* Image */}
+            <div className="flex justify-center mb-4">
+              <Image src={doc.image}
+              width={300}
+              height={300}
+                alt={doc.name}
+                className="w-24 h-24 rounded-full border-4 border-blue-500 dark:border-blue-400 object-cover 
+                           transition-transform duration-300 hover:scale-110" unoptimized />
+                
+              
+            </div>
+    
+            {/* Info */}
+            <h2 className="text-xl font-semibold text-center">{doc.name}</h2>
+            <p className="text-center text-gray-600 dark:text-gray-300">
+              {doc.specialization}
+            </p>
+    
+            <div className="mt-4 space-y-1 text-sm flex-1">
+              <p>
+                <span className="font-semibold">Email:</span> {doc.email}
+              </p>
+              <p>
+                <span className="font-semibold">Phone:</span> {doc.phone}
+              </p>
+              <p>
+                <span className="font-semibold">Experience:</span>{" "}
+                {doc.experience} years
+              </p>
+              <p>
+                <span className="font-semibold">Available:</span>{" "}
+                {doc.availability}
+              </p>
+            </div>
+    
+            {/* Appointment Button */}
+            <button
+              onClick={()=>handleClick(doc.id)}
+              className="mt-4 w-full border-2 border-blue-700 bg-white hover:bg-blue-700 hover:text-white text-blue-700 font-medium py-2 px-4 rounded-lg transition"
+            >
+              Book Appointment
+            </button>
+          </div>
+        ))}
       </div>
-    ))}
-  </div>
-  <div className='w-full my-10 flex justify-center'>
-      <Link href={'/all_doctors'}><Button>All Doctors</Button></Link>
-  </div>
- 
-</div>
-
+    </div>
+    
   )
 }
