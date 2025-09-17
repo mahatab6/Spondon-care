@@ -89,7 +89,7 @@ const Package = [
 
 export default function TestPage() {
   return (
-    <div>
+    <div className="max-w-7xl mx-auto">
       <div className=" py-28 lg:py-40 flex flex-col items-center justify-center text-center bg-gradient-to-br from-blue-600 via-teal-600 to-green-600 text-white overflow-hidden ">
         <h2 className="text-4xl md:text-6xl font-bold mb-6">
           Reliable Lab Tests & Diagnostics,{" "}
