@@ -3,7 +3,7 @@ import ServicesPage from './components/servicesPage'
 
 export default function page() {
   return (
-    <div>
+    <div >
         <ServicesPage/>
     </div>
   )
