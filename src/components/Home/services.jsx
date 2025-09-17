@@ -47,7 +47,10 @@ export default function Services() {
   ];
 
   return (
+
+    <div className="max-w-7xl mx-auto">
     <div className="my-16">
+
       <div className="text-center space-y-3">
         <h2 className="text-4xl font-bold">Our Key Services</h2>
         <p className="text-xl ">

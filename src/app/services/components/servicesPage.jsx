@@ -166,7 +166,7 @@ const services = [
 ];
 export default function ServicesPage() {
   return (
-    <div className=" py-12 px-4">
+    <div className=" py-12 px-4 max-w-7xl mx-auto">
       {/* Title Section */}
       <div className="text-center mb-12">
         <h2 className="text-3xl font-bold text-gray-800">
@@ -179,7 +179,7 @@ export default function ServicesPage() {
       </div>
 
       {/* Card Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8 ">
         {services.map((service) => (
           <div
             key={service.id}
